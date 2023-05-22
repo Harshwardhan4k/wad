@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "First Commit"
+git status
+git remote add origin https://github.com/Harshwardhan4k/wad.git
+git push -u origin master
