@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON CRUD</title>
+  </head>
+  <body>
+    <h1>JSON CRUD</h1>
+
+    <h2>Get All Items</h2>
+    <button onclick="getAllItems()">Get All Items</button>
+    <pre id="output"></pre>
+
+    <h2>Create Item</h2>
+    <form id="createForm" onsubmit="createItem(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <button type="submit">Create</button>
+    </form>
+
+    <h2>Update Item</h2>
+    <form id="updateForm" onsubmit="updateItem(event)">
+      <label for="updateId">Item ID:</label>
+      <input type="text" id="updateId" name="updateId" required />
+      <label for="updateName">Name:</label>
+      <input type="text" id="updateName" name="updateName" required />
+      <button type="submit">Update</button>
+    </form>
+
+    <h2>Delete Item</h2>
+    <form id="deleteForm" onsubmit="deleteItem(event)">
+      <label for="deleteId">Item ID:</label>
+      <input type="text" id="deleteId" name="deleteId" required />
+      <button type="submit">Delete</button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
